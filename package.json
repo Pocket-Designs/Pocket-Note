@@ -4,8 +4,8 @@
   "description": "Pocket-Note \u2013 notebook app with canvas pages, tables, encryption and folder sync",
   "main": "main.js",
   "author": {
-    "name": "project-tech-me",
-    "email": "project-tech-me@protonmail.com"
+    "name": "Pocket-Designs",
+    "email": "pocket-designs@proton.me"
   },
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "app.pocket-note.desktop",
+    "appId": "com.pocketdesigns.pocketnote",
     "productName": "Pocket-Note",
     "files": [
       "main.js",
@@ -54,7 +54,7 @@
       ],
       "icon": "build/icon.png",
       "category": "Office",
-      "maintainer": "project-tech-me <project-tech-me@protonmail.com>"
+      "maintainer": "Pocket-Designs <pocket-designs@proton.me>"
     },
     "msi": {
       "oneClick": false,
@@ -71,12 +71,12 @@
         "to": "THIRD-PARTY-NOTICES.txt"
       }
     ],
-    "copyright": "Copyright \u00a9 2026 project-tech-me",
+    "copyright": "Copyright \u00a9 2026 Pocket-Designs",
     "publish": null
   },
-  "homepage": "https://github.com/Projects-me-design",
+  "homepage": "https://github.com/Pocket-Designs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Projects-me-design/PocketNote.git"
+    "url": "https://github.com/Pocket-Designs/Pocket-Note.git"
   }
 }

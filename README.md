@@ -47,7 +47,7 @@ No PC with Node? Push the folder to GitHub and run the "Build Pocket-Note" workf
 ## Licence
 Pocket-Note is released under the MIT License (`LICENSE`). Third-party components and their licences are listed in `THIRD-PARTY-NOTICES.txt`; both files are installed with the app.
 
-Author: project-tech-me <project-tech-me@protonmail.com>
+Author: Pocket-Designs <pocket-designs@proton.me>
 
 ## App icon
 The icon lives in `build/` (`icon.png` for Linux and the window, `icon.ico` for Windows). To change it, replace both files.

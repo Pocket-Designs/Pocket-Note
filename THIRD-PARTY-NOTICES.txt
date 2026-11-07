@@ -1,7 +1,7 @@
 Pocket-Note – third-party software notices
 ==========================================
 
-Pocket-Note, Copyright (c) 2026 project-tech-me, is licensed under the MIT License (see the LICENSE file).
+Pocket-Note, Copyright (c) 2026 Pocket-Designs, is licensed under the MIT License (see the LICENSE file).
 It includes or is built with the following third-party components. Their
 licences are reproduced below, as those licences require.
 
@@ -448,3 +448,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Electron includes the Chromium browser engine and many open-source libraries.
 Their copyright notices and licences are listed in the file LICENSES.chromium.html,
 which is installed next to Pocket-Note's program files.
+
+pdf.js (pdfjs-dist 3.11.174) — Apache License 2.0 — Mozilla Foundation. Bundled in the desktop app and used for PDF import.
