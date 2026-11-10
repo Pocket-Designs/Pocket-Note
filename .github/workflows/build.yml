@@ -1,6 +1,13 @@
 name: Build Pocket-Note installers
+# Installers are attached straight to a GitHub Release. No Actions artifacts
+# are created, so the Actions storage quota is never used.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release tag to publish to (e.g. v1.0.2)'
+        required: true
+        default: 'v1.0.0'
   push:
     tags: ['v*']
 permissions:
@@ -14,18 +21,9 @@ jobs:
         with: { node-version: 22 }
       - run: npm install
       - run: npm run dist:win
-      - if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
-        uses: actions/upload-artifact@v7
+      - uses: softprops/action-gh-release@v3
         with:
-          name: Pocket-Note-Windows
-          retention-days: 1
-          compression-level: 0
-          path: |
-            dist/*.exe
-            dist/*.msi
-      - if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v3
-        with:
+          tag_name: ${{ github.event.inputs.version || github.ref_name }}
           files: |
             dist/*.exe
             dist/*.msi
@@ -37,18 +35,9 @@ jobs:
         with: { node-version: 22 }
       - run: npm install
       - run: npm run dist:linux
-      - if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
-        uses: actions/upload-artifact@v7
+      - uses: softprops/action-gh-release@v3
         with:
-          name: Pocket-Note-Linux
-          retention-days: 1
-          compression-level: 0
-          path: |
-            dist/*.AppImage
-            dist/*.deb
-      - if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v3
-        with:
+          tag_name: ${{ github.event.inputs.version || github.ref_name }}
           files: |
             dist/*.AppImage
             dist/*.deb

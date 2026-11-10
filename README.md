@@ -55,4 +55,4 @@ The icon lives in `build/` (`icon.png` for Linux and the window, `icon.ico` for 
 ## One-click installers
 - **Windows:** double-click `Build-Windows-Installer.bat` → installer `.exe`, `.msi` and portable `.exe` appear in `dist\`.
 - **Linux:** run `./Build-Linux-Installer.sh` → `.AppImage` and `.deb` appear in `dist/`. Install the .deb with `sudo apt install ./dist/Pocket-Note-*.deb`; it adds Pocket-Note to your applications menu.
-- **No build tools?** Upload this folder to a GitHub repository and run the "Build Pocket-Note installers" workflow (Actions tab). Windows and Linux are built separately; download them from the run's artifacts, or push a tag like `v1.0.0` to attach them to a Release.
+- **No build tools?** Upload this folder to a GitHub repository and run the "Build Pocket-Note installers" workflow (Actions tab). Windows and Linux are built separately and the installers are attached to a GitHub Release (no Actions artifacts are used). Push a tag like `v1.0.0`, or run the workflow by hand and type the release tag.

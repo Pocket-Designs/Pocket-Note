@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, shell, dialog, ipcMain } = require('electron');
+const { app, BrowserWindow, Menu, shell, dialog, ipcMain, globalShortcut } = require('electron');
 const path = require('path');
 
 // keep notes in the original data folder so existing users don't lose them after the rename
@@ -28,7 +28,16 @@ function createWindow() {
 app.whenReady().then(() => {
   Menu.setApplicationMenu(Menu.buildFromTemplate([{ role: 'editMenu' }, { role: 'viewMenu' }, { role: 'windowMenu' }]));
   createWindow();
+  // Ctrl+Alt+N works from any program: opens a new quick note
+  try {
+    globalShortcut.register('CommandOrControl+Alt+N', () => {
+      const w = BrowserWindow.getAllWindows()[0]; if (!w) return;
+      if (w.isMinimized()) w.restore(); w.show(); w.focus();
+      w.webContents.executeJavaScript('window.oQuick&&window.oQuick()').catch(() => {});
+    });
+  } catch (e) {}
   app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });
 });
 app.on('second-instance', () => { const w = BrowserWindow.getAllWindows()[0]; if (w) { if (w.isMinimized()) w.restore(); w.focus(); } });
+app.on('will-quit', () => { try { globalShortcut.unregisterAll(); } catch (e) {} });
 app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit(); });
