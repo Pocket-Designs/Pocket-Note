@@ -1,9 +1,3 @@
-<div align="center">
-    <img width="224" height="224" alt="Pocket-Note" src="https://github.com/user-attachments/assets/944725e5-6c04-4178-ad98-f34dcdad8b1a" />
-
-</div>
-
-
 # Pocket-Note desktop (Windows + Linux)
 
 A thin Electron wrapper around `pocket-note.html`. Your notes are kept in a real file
@@ -50,8 +44,12 @@ Do not edit those by hand.
 No PC with Node? Push the folder to GitHub and run the "Build Pocket-Note" workflow (Actions tab) – it builds the .exe and .msi on a Windows runner and attaches them as downloads.
 
 
+## Documentation
+- [User Guide](docs/User-Guide.md) (also as `Pocket-Note-User-Guide.pdf`)
+- [Developer Guide](docs/Developer-Guide.md)
+
 ## Licence
-Pocket-Note is released under the MIT License (`LICENSE`). Third-party components and their licences are listed in `THIRD-PARTY-NOTICES.txt`; both files are installed with the app.
+Pocket-Note is released under the MIT License (`LICENSE`). Third-party components and their licences are listed in `THIRD-PARTY-NOTICES.md`; both files are installed with the app.
 
 Author: Pocket-Designs <pocket-designs@proton.me>
 

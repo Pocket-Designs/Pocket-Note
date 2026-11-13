@@ -1,5 +1,4 @@
-Pocket-Note – third-party software notices
-==========================================
+# Pocket-Note – third-party software notices
 
 Pocket-Note, Copyright (c) 2026 Pocket-Designs, is licensed under the MIT License (see the LICENSE file).
 It includes or is built with the following third-party components. Their
@@ -13,9 +12,7 @@ licences are reproduced below, as those licences require.
 
 Build-time tools that are not distributed with the app: electron-builder (MIT), esbuild (MIT).
 
-------------------------------------------------------------------------
-1. nspell
-------------------------------------------------------------------------
+## 1. nspell
 (The MIT License)
 
 Copyright (c) 2016 Titus Wormer <tituswormer@gmail.com>
@@ -39,9 +36,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-------------------------------------------------------------------------
-2. is-buffer
-------------------------------------------------------------------------
+## 2. is-buffer
 The MIT License (MIT)
 
 Copyright (c) Feross Aboukhadijeh
@@ -64,9 +59,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-------------------------------------------------------------------------
-3. English dictionaries (en_US and en_GB-ise) – SCOWL / Hunspell
-------------------------------------------------------------------------
+## 3. English dictionaries (en_US and en_GB-ise) – SCOWL / Hunspell
 Both dictionaries carry the same licence text, reproduced once below.
 
 en_US Hunspell Dictionary
@@ -417,9 +410,7 @@ and Australian word list.  It is under the following copyright:
 Build Date: Mon Dec  7 20:19:27 EST 2020
 Wordlist Command: mk-list --accents=strip en_US 60
 
-------------------------------------------------------------------------
-4. Electron
-------------------------------------------------------------------------
+## 4. Electron
 Copyright (c) Electron contributors
 Copyright (c) 2013-2020 GitHub Inc.
 
@@ -442,9 +433,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-------------------------------------------------------------------------
-5. Chromium
-------------------------------------------------------------------------
+## 5. Chromium
 Electron includes the Chromium browser engine and many open-source libraries.
 Their copyright notices and licences are listed in the file LICENSES.chromium.html,
 which is installed next to Pocket-Note's program files.
