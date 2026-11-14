@@ -1,3 +1,8 @@
+<div align="center">
+<img width="224" height="224" alt="Pocket-Note" src="../build/icon.png" />
+</div>
+Pocket-Note
+
 # Pocket-Note – third-party software notices
 
 Pocket-Note, Copyright (c) 2026 Pocket-Designs, is licensed under the MIT License (see the LICENSE file).
