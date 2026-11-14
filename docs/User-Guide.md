@@ -1,3 +1,7 @@
+<div align="center">
+<img width="224" height="224" alt="Pocket-Note" src="../build/icon.png" />
+</div>
+
 # Pocket-Note User Guide
 
 Pocket-Note is a notebook app for Windows and Linux (and any modern browser) with rich-text pages, tables, free-form canvases, wiki links, folder sync and optional encryption. This guide covers everything you do day to day.
