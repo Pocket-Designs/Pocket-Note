@@ -1,3 +1,8 @@
+<div align="center">
+<img width="224" height="224" alt="Pocket-Note" src="../build/icon.png" />
+</div>
+
+
 # Pocket-Note Developer Guide
 
 Pocket-Note is one self-contained HTML file ( `pocket-note.html` , about 800 KB) that runs in any modern browser, plus a thin Electron wrapper that turns it into a Windows and Linux desktop app. There is no framework, no bundler and no server: the app is plain HTML, CSS and JavaScript, so you can edit it in any text editor and reload.
