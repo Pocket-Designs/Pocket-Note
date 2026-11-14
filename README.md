@@ -1,3 +1,7 @@
+<div align="center">
+<img width="224" height="224" alt="Pocket-Note" src="../build/icon.png" />
+</div>
+
 # Pocket-Note desktop (Windows + Linux)
 
 A thin Electron wrapper around `pocket-note.html`. Your notes are kept in a real file
