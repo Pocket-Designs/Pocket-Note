@@ -1,7 +1,7 @@
 <div align="center">
-<img width="224" height="224" alt="Pocket-Note" src="../build/icon.png" />
+<img width="224" height="224" alt="Pocket-Note" src="./build/icon.png" />
 </div>
-Pocket-Note
+
 
 # Pocket-Note – third-party software notices
 
